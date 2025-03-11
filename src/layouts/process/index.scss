@@ -1,0 +1,118 @@
+.app-process {
+	display: flex;
+	align-items: center;
+	height: 30px;
+	// position: relative;
+	margin: 0 0 10px 0;
+	padding: 0 10px;
+	user-select: none;
+  
+	&__operation {
+	  display: flex;
+	  background-color: #fff;
+	  height: 30px;
+	  border-radius: 4px;
+	  margin-right: 10px;
+  
+	  .item {
+		display: flex;
+		align-items: center;
+		padding: 0 10px;
+		line-height: 30px;
+		color: #333;
+		cursor: pointer;
+		font-weight: bold;
+  
+		&:not(:last-child)::after {
+		  content: "";
+		  position: absolute;
+		  right: 0;
+		  top: calc(50% - 5px);
+		  height: 10px;
+		  width: 1px;
+		  background-color: black;
+		}
+  
+		&:hover {
+		  color: #165dff;
+		}
+	  }
+	}
+  
+	&__container {
+	  height: 30px;
+	  flex: 1;
+	  position: relative;
+	  overflow: hidden;
+	}
+  
+	&__scroller {
+		height: 100%;
+	  width: 100%;
+	  white-space: nowrap;
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	  scrollbar-width: none;
+	  overflow: auto;
+		scroll-behavior: smooth; // 添加平滑滚动效果
+	}
+  
+	&__item {
+		display: inline-flex;
+		align-items: center;
+		border-radius: 4px;
+		height: 30px;
+		padding: 0 10px;
+		background-color: #fff;
+		font-size: 12px;
+		margin-right: 10px;
+		color: #909399;
+		cursor: pointer;
+
+	  .icon {
+		width: 0;
+		overflow: hidden;
+		transition: all 0.3s;
+		color: #909399;
+		opacity: 0;
+
+		&:hover {
+			width: 13px;
+			height: 13px;
+			color: #f56c6c !important;
+		}
+	  }
+  
+	  &:last-child {
+		margin-right: 0;
+	  }
+  
+	  &:hover:not(.active) {
+		background-color: #eee;
+	  }
+  
+	  &.active {
+		background-color: #165dff;
+  
+		span {
+		  color: #fff;
+		}
+  
+		.icon {
+		  color: #fff !important;
+		}
+	  }
+  
+	  &:hover,
+	  &.active {
+		.icon {
+			width: 13px;
+			height: 13px;
+		  opacity: 1;
+		  margin-left: 5px;
+		}
+	  }
+	}
+  }
+  

@@ -1,0 +1,38 @@
+.app-views {
+    flex: 1;
+    margin: 0px 10px; /* 简化外边距设置 */
+    margin-bottom: 10px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    border-radius: 4px;
+    position: relative;
+    background-color: white;
+    height: auto;
+    overflow: auto;
+}
+
+  .app-views::-webkit-scrollbar {
+	width: 3px; 
+  }
+  
+  .app-views::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+	border-radius: 5px;
+  }
+  
+  .app-views::-webkit-scrollbar-thumb {
+	background: linear-gradient(180deg, #888, #555); 
+	border-radius: 10px; 
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .app-views::-webkit-scrollbar-thumb:hover {
+	background: linear-gradient(180deg, #555, #333); 
+  }
+  
+  .app-views {
+	scrollbar-width: thin; 
+	scrollbar-color: #888 #f1f1f1;
+  }
+  
+  

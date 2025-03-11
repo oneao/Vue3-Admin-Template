@@ -1,0 +1,29 @@
+.app-topbar {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  min-height: 50px;
+  max-height: 50px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  // border-bottom: 1px solid #e5e6eb; /* 浅黑色（20%不透明度） */
+  box-shadow: 0 6px 6px -3px rgba(128, 128, 128, 0.1);
+
+  &__action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    &__icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .flex1 {
+    flex: 1;
+  }
+}

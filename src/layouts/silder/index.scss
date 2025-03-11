@@ -1,0 +1,28 @@
+.app-slider {
+	height: 100%;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__logo {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 50px;
+		cursor: pointer;
+		// border-bottom: 1px solid #e5e6eb; /* 浅黑色（20%不透明度） */
+		img {
+			height: 32px;
+			width: 32px;
+		}
+
+		span {
+			color: rgb(22, 93, 255);
+			font-weight: bold;
+			font-size: 16px;
+			margin-left: 10px;
+			line-height: 1;
+			white-space: nowrap;
+		}
+	}
+}
